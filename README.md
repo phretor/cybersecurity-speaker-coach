@@ -19,11 +19,19 @@ This skill transforms AI agents into expert presentation coaches that help speak
 - **Venue Adaptation**: Adjust approach for academic vs. practitioner conferences
 - **Speaker Style Assessment**: Identify your archetype (Analyst, Visionary, Educator, Inspirer) and leverage its strengths
 
-## Usage with Claude Code
+## Quick Start
 
-### Install as a Skill
+The coaching methodology lives in [`SKILL.md`](SKILL.md). It is a plain Markdown file (~76 KB) that works as a system prompt or knowledge base for any modern LLM. Pick the platform you use:
 
-Copy or symlink `SKILL.md` into your Claude Code project directory or your global `~/.claude/` config:
+### ChatGPT (Custom GPT)
+
+A ready-to-use GPT is available — no setup required:
+
+**[Cybersecurity Speaker Coach on ChatGPT](https://chatgpt.com/g/g-69817ef7c7ac81919da5c9525f27a2f3-cybersecurity-speaker-coach)**
+
+### Claude Code
+
+Install `SKILL.md` as a slash command:
 
 ```bash
 # Option A: Clone into your project
@@ -34,16 +42,36 @@ cd cybersecurity-speaker-coach
 ln -s /path/to/cybersecurity-speaker-coach/SKILL.md ~/.claude/commands/cybersecurity-speaker-coach.md
 ```
 
+### Claude.ai
+
+1. Create a new **Project**
+2. Add `SKILL.md` to the project knowledge
+3. Start chatting — Claude will use the methodology automatically
+
+### Google Gemini
+
+1. Open **Gems** and create a new Gem
+2. Paste the contents of `SKILL.md` into the Gem instructions
+3. Start a conversation with your Gem
+
+### Other LLMs (Copilot, Ollama, LM Studio, Open WebUI, etc.)
+
+`SKILL.md` fits within the context window of all major models. Use whichever method your platform supports:
+
+- **System prompt**: Paste the contents of `SKILL.md` as the system message
+- **File upload**: Upload `SKILL.md` directly into the conversation
+- **RAG / knowledge base**: Add `SKILL.md` as a document in your retrieval pipeline
+
 ### Start a Coaching Session
 
-Once the skill is loaded, ask Claude Code to coach you:
+Once the skill is loaded, ask the AI to coach you:
 
 ```
 I have a 30-minute talk at Black Hat in 6 weeks about a firmware vulnerability
 we found in industrial control systems. Can you help me prepare?
 ```
 
-Claude will walk you through the methodology:
+The coach will walk you through the methodology:
 
 1. Identify your target audience
 2. Write your core message (280 chars)
