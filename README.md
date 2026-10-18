@@ -1,5 +1,15 @@
 # Cybersecurity Supercommunicator Coach
 
+> [!IMPORTANT]
+> **This repository is archived and no longer maintained.**
+> The skill now lives in **[phretor/skills](https://github.com/phretor/skills)** as the [`speaker-coach`](https://github.com/phretor/skills/tree/main/plugins/speaker-coach) plugin (`/ph:coach <design|debug|rehearse>`). Install it with:
+>
+> ```bash
+> /plugin install https://github.com/phretor/skills
+> ```
+>
+> The content below is kept for historical reference only.
+
 An AI agent skill that coaches cybersecurity professionals to design and deliver outstanding presentations. Based on the blog series *"Cybersecurity Needs Supercommunicators"* and *"Become a Cybersecurity Supercommunicator"* by Federico Maggi.
 
 ## Why This Exists
